@@ -24,7 +24,9 @@ public class Testcase2 extends FlightbookingOneWay {
 		
 		fb.passengerdetails("kadayanallur");
 		
-		fb.popup();
+		fb.popupclose1();
+		
+		fb.popupclose2();
 		
 		fb.payment("4792673202517890", "Emily Lang", "01", "28", "811");
 		
