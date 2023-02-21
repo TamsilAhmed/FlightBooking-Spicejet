@@ -28,7 +28,9 @@ public class Testcase3 extends FlightBookingRoundTrip{
 		
 		fr.passengerdetails("Kadayanallur");
 		
-		fr.popup();
+		fr.popupclose1();
+		
+		fr.popupclose2();
 		
 		fr.payment("4792673202517890", "Emily Lang", "01", "28", "811");
 		

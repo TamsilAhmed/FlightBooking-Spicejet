@@ -372,7 +372,46 @@ public class Utils {
 		public void quit() {
 			driver.quit();
 		}
+		public void popupclose1() {
+			
+			extent = new ExtentReports("Reports.html", true);
+
+			test = extent.startTest("Alert handling", "Alert Validation");
+			try {
+				String projectpath = System.getProperty("user.dir");
+				Screen sc = new Screen();
+				Pattern pa = new Pattern(projectpath + "\\skuli_images\\1676954593655.png");
+				sc.click(pa);
+				test.log(LogStatus.INFO, "Alert canceled");
+			}catch(Exception e) {
+				test.log(LogStatus.ERROR, e.getMessage());
+			}
+			extent.endTest(test);
+
+			extent.flush();
 		}
+		
+public void popupclose2() {
+			
+			extent = new ExtentReports("Reports.html", true);
+
+			test = extent.startTest("Alert handling", "Alert Validation");
+			try {
+				String projectpath = System.getProperty("user.dir");
+				Screen sc = new Screen();
+				Pattern pa = new Pattern(projectpath + "\\skuli_images\\1676954629084.png");
+				sc.click(pa);
+				test.log(LogStatus.INFO, "Alert canceled");
+			}catch(Exception e) {
+				test.log(LogStatus.ERROR, e.getMessage());
+			}
+			extent.endTest(test);
+
+			extent.flush();
+		}
+			
+		}
+		
 	
 	
 
